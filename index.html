@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco Silicon One | Engineering Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --cisco-blue: #00bceb;
+            --dark-bg: #0a0a0a;
+            --card-bg: #161616;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00bceb, #017cad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            box-shadow: 0 0 50px rgba(0, 188, 235, 0.2);
+        }
+        .card-hover:hover {
+            border-color: var(--cisco-blue);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background-color: var(--cisco-blue);
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: 0;
+        }
+        .recruiter-joke:hover .joke-icon {
+            transform: rotate(15deg) scale(1.2);
+            transition: transform 0.2s ease;
+        }
+        .gemini-gradient {
+            background: linear-gradient(135deg, #4285f4, #9b72cb, #d96570);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        .ai-loading {
+            animation: pulse-soft 1.5s infinite;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Top Banner -->
+    <div class="w-full bg-[#00bceb]/10 border-b border-[#00bceb]/20 py-2 text-center">
+        <p class="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-[#00bceb]">
+            <i class="fas fa-id-badge mr-2"></i> Recruiter-Curated Resource for Engineering Candidates
+        </p>
+    </div>
+
+    <!-- Header -->
+    <nav class="sticky top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <span class="text-white">CISCO</span>
+                <span class="text-[#00bceb]">Silicon One</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#vision" class="hover:text-white transition">Vision</a>
+                <a href="#tech" class="hover:text-white transition">Tech</a>
+                <a href="#ai-tools" class="hover:text-[#00bceb] transition flex items-center gap-1">✨ AI Tools</a>
+                <a href="#teams" class="hover:text-white transition">Teams</a>
+                <a href="#hiring" class="hover:text-white transition">Process</a>
+            </div>
+            <a href="https://careers.cisco.com/global/en/job/CISCISGLOBAL2003073EXTERNALENGLOBAL/C-Software-Engineer?utm_source=Alex-Site" target="_blank" class="bg-[#00bceb] hover:bg-[#017cad] text-white px-6 py-2 rounded-full font-bold transition text-xs">Apply Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1 mb-6">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00bceb] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00bceb]"></span>
+                </span>
+                <span class="text-[10px] uppercase tracking-widest font-bold text-gray-300">Engineering Recruitment Hub</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Innovation at <span class="gradient-text">Speed and Scale</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                Everything you need to know about joining the team building the world’s first unified silicon architecture. 
+                <span class="text-white font-medium block mt-2">One chip. One architecture. Your next career move.</span>
+            </p>
+            
+            <div class="relative inline-block group">
+                <div class="absolute -inset-1 bg-[#00bceb] rounded-lg blur opacity-25 group-hover:opacity-50 transition"></div>
+                <img src="https://www.cisco.com/c/dam/en/us/products/collateral/switches/silicon-one/silicon-one-family.jpg" 
+                     onerror="this.src='https://placehold.co/1200x600/161616/00bceb?text=Cisco+Silicon+One+Architecture'"
+                     alt="Silicon One Architecture" class="relative rounded-lg hero-glow w-full max-w-4xl shadow-2xl">
+            </div>
+        </div>
+    </header>
+
+    <!-- ✨ AI Candidate Assistance -->
+    <section id="ai-tools" class="py-20 bg-gradient-to-b from-black to-[#0a0a0a] border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Candidate <span class="gemini-gradient">✨ AI Tools</span></h2>
+                <p class="text-gray-400 max-w-xl mx-auto">I've built these Gemini-powered agents to help you navigate your candidacy and understand our complex architecture.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- AI Feature 1: Career Path Finder -->
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <i class="fas fa-map-signs text-6xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        ✨ Career Path Finder
+                    </h3>
+                    <p class="text-sm text-gray-400 mb-6">Paste your summary or skills, and I'll have Gemini match you to the right Silicon One engineering team for our next chat.</p>
+                    <textarea id="ai-path-input" rows="3" class="w-full bg-black/50 border border-white/10 rounded-xl p-4 text-sm focus:border-[#00bceb] outline-none transition mb-4" placeholder="e.g. I have 5 years of C++ experience, worked on Linux kernel drivers and networking protocols..."></textarea>
+                    <button id="ai-path-btn" class="w-full bg-white/5 hover:bg-white/10 border border-white/10 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition flex items-center justify-center gap-2">
+                        <span>Find My Team</span>
+                    </button>
+                    <div id="ai-path-result" class="mt-4 text-sm text-gray-300 hidden p-4 bg-blue-500/5 border border-blue-500/20 rounded-xl"></div>
+                </div>
+
+                <!-- AI Feature 2: Architecture ELI5 -->
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <i class="fas fa-brain text-6xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        ✨ Architecture ELI5
+                    </h3>
+                    <p class="text-sm text-gray-400 mb-6">Ask Gemini to explain any technical term from this page in simple terms.</p>
+                    <div class="flex gap-2 mb-4">
+                        <input id="ai-eli5-input" type="text" class="flex-1 bg-black/50 border border-white/10 rounded-xl px-4 py-2 text-sm focus:border-[#00bceb] outline-none transition" placeholder="e.g. What is P4 Run-to-Completion?">
+                        <button id="ai-eli5-btn" class="bg-[#00bceb] px-4 rounded-xl hover:bg-[#017cad] transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div id="ai-eli5-result" class="mt-4 text-sm text-gray-300 hidden p-4 bg-purple-500/5 border border-purple-500/20 rounded-xl"></div>
+                </div>
+            </div>
+
+            <!-- AI Feature 3: Technical Coach (Full Width) -->
+            <div class="mt-8 glass-panel p-8 rounded-3xl border border-[#00bceb]/20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="max-w-lg">
+                        <h3 class="text-xl font-bold mb-2">✨ Technical Interview Prep</h3>
+                        <p class="text-sm text-gray-400">Ready for Step 3? Let Gemini quiz you on high-performance C++ and networking fundamentals specifically for the Silicon One stack.</p>
+                    </div>
+                    <button id="ai-coach-start" class="whitespace-nowrap bg-gradient-to-r from-[#00bceb] to-[#017cad] px-8 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition">
+                        Start ✨ Prep Session
+                    </button>
+                </div>
+                <div id="ai-coach-box" class="mt-8 hidden border-t border-white/5 pt-6">
+                    <div id="ai-coach-chat" class="space-y-4 max-h-60 overflow-y-auto mb-6 pr-2">
+                        <div class="text-center text-gray-500 text-xs italic">Session starting... Gemini is preparing your first question.</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <input id="ai-coach-input" type="text" class="flex-1 bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-[#00bceb] outline-none" placeholder="Your answer here...">
+                        <button id="ai-coach-send" class="bg-white/10 px-6 rounded-xl hover:bg-white/20 transition">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: The Vision -->
+    <section id="vision" class="py-20 bg-[#0f0f0f]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">The Vision: <span class="text-[#00bceb]">The Power of One</span></h2>
+                <div class="h-1 w-20 bg-[#00bceb]"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        The networking industry was once defined by fragmented architectures. Cisco Silicon One fundamentally changed this, delivering the only unified networking silicon architecture that spans every role in the network.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <i class="fas fa-check-circle text-[#00bceb] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Unified Across Every Role</h4>
+                                <p class="text-sm text-gray-400">A single architecture that scales from service provider core to enterprise campus. <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m12/the-story-of-silicon-one.html" target="_blank" class="underline text-[#00bceb]">Source</a></p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fas fa-microchip text-[#00bceb] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Massive AI/ML Integration</h4>
+                                <p class="text-sm text-gray-400">Powering next-gen clusters with G200/P200 families (51.2 Tbps). <a href="https://investor.cisco.com/news/news-details/2025/Cisco-Sets-Benchmark-with-Industrys-Most-Scalable-Efficient-51-2T-Routing-Systems-for-Distributed-AI-Workloads/default.aspx" target="_blank" class="underline text-[#00bceb]">Source</a></p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fas fa-handshake text-[#00bceb] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Strategic NVIDIA Partnership</h4>
+                                <p class="text-sm text-gray-400">Exclusive partner silicon for NVIDIA’s Spectrum-X Ethernet platform. <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m12/the-story-of-silicon-one.html" target="_blank" class="underline text-[#00bceb]">Source</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-card-bg p-8 rounded-2xl border border-white/5">
+                    <h3 class="text-2xl font-bold mb-6">Market Expansion</h3>
+                    <p class="text-gray-400 mb-6 italic text-sm">"Erasing the false choice between Merchant and Custom silicon."</p>
+                    <div class="space-y-4">
+                        <div class="bg-black/40 p-4 rounded-lg border-l-4 border-[#00bceb]">
+                            <span class="text-xs uppercase text-[#00bceb] font-bold">New Release</span>
+                            <p class="font-medium">A100 (Enterprise Campus) & E100 (Smart Switches)</p>
+                        </div>
+                        <div class="bg-black/40 p-4 rounded-lg">
+                            <p class="text-gray-400 text-sm">Scales from 3.2 Tbps to 51.2 Tbps with a single common SDK.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Technical Breakthroughs -->
+    <section id="tech" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical <span class="text-[#00bceb]">Breakthroughs</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Breakthrough 1 -->
+                <div class="bg-card-bg p-8 rounded-2xl border border-white/5 card-hover">
+                    <div class="text-4xl mb-6 text-[#00bceb]"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Slice-Based Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Modular architecture built from repeatable "Slices" (Receive NPU, Transmit NPU, Traffic Manager). 
+                    </p>
+                    <p class="text-[#00bceb] text-xs font-bold uppercase">Scales up to 3 exabits (3-layer)</p>
+                </div>
+                <!-- Breakthrough 2 -->
+                <div class="bg-card-bg p-8 rounded-2xl border border-white/5 card-hover">
+                    <div class="text-4xl mb-6 text-[#00bceb]"><i class="fas fa-code"></i></div>
+                    <h3 class="text-xl font-bold mb-4">P4 Run-to-Completion</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Native P4 processing avoids the "packet recycling" penalty. Future-proof support for emerging AI protocols without hardware upgrades.
+                    </p>
+                    <p class="text-[#00bceb] text-xs font-bold uppercase">Zero-Penalty Flexibility</p>
+                </div>
+                <!-- Breakthrough 3 -->
+                <div class="bg-card-bg p-8 rounded-2xl border border-white/5 card-hover">
+                    <div class="text-4xl mb-6 text-[#00bceb]"><i class="fas fa-memory"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Unified Memory Efficiency</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        The <strong>'Write Once, Read Once'</strong> design ensures data never moves unnecessarily, maximizing burst performance for AI traffic surges.
+                    </p>
+                    <p class="text-[#00bceb] text-xs font-bold uppercase">100% Shared Buffering</p>
+                </div>
+            </div>
+            <!-- Innovation Highlight -->
+            <div class="mt-12 p-8 bg-gradient-to-r from-blue-900/20 to-transparent rounded-2xl border border-blue-500/20 text-center">
+                <h4 class="text-xl font-bold text-white mb-2">Innovation: Scheduled Ethernet for AI</h4>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Reduces job completion times (JCT) by up to <span class="text-[#00bceb] font-bold">1.6x</span> compared to generic Ethernet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: The Teams & Requirements -->
+    <section id="teams" class="py-20 bg-[#0f0f0f]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Engineering <span class="text-[#00bceb]">Ecosystem</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">
+                    The Silicon One software organization is composed of specialized teams working across the entire stack.
+                </p>
+            </div>
+
+            <!-- Teams Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <div class="p-6 bg-black/40 rounded-xl border border-white/5 hover:border-[#00bceb]/30 transition-all group">
+                    <div class="text-[#00bceb] mb-4 text-2xl group-hover:scale-110 transition-transform"><i class="fas fa-microchip"></i></div>
+                    <h5 class="font-bold text-lg mb-2">Low-Level Drivers</h5>
+                    <p class="text-sm text-gray-400">Building the hardware interaction foundation, managing registers, and core initialization.</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl border border-white/5 hover:border-[#00bceb]/30 transition-all group">
+                    <div class="text-[#00bceb] mb-4 text-2xl group-hover:scale-110 transition-transform"><i class="fas fa-sitemap"></i></div>
+                    <h5 class="font-bold text-lg mb-2">ACL & Data Structures</h5>
+                    <p class="text-sm text-gray-400">Developing sophisticated forwarding logic and high-performance packet classification.</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl border border-white/5 hover:border-[#00bceb]/30 transition-all group">
+                    <div class="text-[#00bceb] mb-4 text-2xl group-hover:scale-110 transition-transform"><i class="fas fa-project-diagram"></i></div>
+                    <h5 class="font-bold text-lg mb-2">API (SAI)</h5>
+                    <p class="text-sm text-gray-400">Implementing the Switch Abstraction Interface for industry-standard network operating systems.</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl border border-white/5 hover:border-[#00bceb]/30 transition-all group">
+                    <div class="text-[#00bceb] mb-4 text-2xl group-hover:scale-110 transition-transform"><i class="fas fa-terminal"></i></div>
+                    <h5 class="font-bold text-lg mb-2">Compiler</h5>
+                    <p class="text-sm text-gray-400">Crafting the P4-programmable toolchain that translates logic to high-speed silicon operations.</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl border border-white/5 hover:border-[#00bceb]/30 transition-all group">
+                    <div class="text-[#00bceb] mb-4 text-2xl group-hover:scale-110 transition-transform"><i class="fas fa-exchange-alt"></i></div>
+                    <h5 class="font-bold text-lg mb-2">Serialization</h5>
+                    <p class="text-sm text-gray-400">Optimizing system-wide data movement and protocol serialization for extreme throughput.</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl border border-[#00bceb]/10 border-dashed flex items-center justify-center text-center">
+                    <div>
+                        <h5 class="font-bold text-gray-500 mb-1">More Domains...</h5>
+                        <p class="text-xs text-gray-600 italic">Traffic Management, Optical, Diagnostics</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Requirements Summary -->
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Left: Stack -->
+                <div class="bg-card-bg p-8 rounded-2xl border border-white/5 flex flex-col">
+                    <h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+                        <i class="fas fa-tools text-[#00bceb]"></i> Technical Stack
+                    </h3>
+                    <div class="space-y-8 flex-grow">
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 flex items-center justify-center bg-blue-500/10 rounded-full text-[#00bceb] font-bold text-lg">C++</div>
+                            <div>
+                                <p class="font-bold">Core Programming</p>
+                                <p class="text-xs text-gray-400">High-performance modern C++ for our SDK and SDK components.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 flex items-center justify-center bg-yellow-500/10 rounded-full text-yellow-500 font-bold text-lg">PY</div>
+                            <div>
+                                <p class="font-bold">Python & Automation</p>
+                                <p class="text-xs text-gray-400">Testing frameworks, infrastructure scripts, and rapid prototyping.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 flex items-center justify-center bg-gray-500/10 rounded-full text-white text-lg"><i class="fab fa-linux"></i></div>
+                            <div>
+                                <p class="font-bold">Linux Environment</p>
+                                <p class="text-xs text-gray-400">User-space and kernel-space development on x86 platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Profile -->
+                <div class="bg-blue-500/5 p-8 rounded-2xl border border-blue-500/10 flex flex-col">
+                    <h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+                        <i class="fas fa-user-circle text-[#00bceb]"></i> Ideal Candidate Profile
+                    </h3>
+                    <ul class="space-y-6 flex-grow">
+                        <li class="flex gap-4">
+                            <div class="mt-1 w-5 h-5 flex-shrink-0 bg-[#00bceb]/20 rounded-full flex items-center justify-center text-[10px] text-[#00bceb]">1</div>
+                            <div>
+                                <p class="font-medium text-sm">Academic Background</p>
+                                <p class="text-xs text-gray-400 mt-1">B.Sc/M.Sc in Computer Science, Computer Engineering, or a related field.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1 w-5 h-5 flex-shrink-0 bg-[#00bceb]/20 rounded-full flex items-center justify-center text-[10px] text-[#00bceb]">2</div>
+                            <div>
+                                <p class="font-medium text-sm">Professional Experience</p>
+                                <p class="text-xs text-gray-400 mt-1">4+ years of professional or academic experience in Software Development.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1 w-5 h-5 flex-shrink-0 bg-[#00bceb]/20 rounded-full flex items-center justify-center text-[10px] text-[#00bceb]">3</div>
+                            <div>
+                                <p class="font-medium text-sm">Domain Expertise</p>
+                                <p class="text-xs text-gray-400 mt-1">3+ years in C++, Embedded Dev, or knowledge of ASIC/hardware processes.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mt-8 pt-6 border-t border-blue-500/10">
+                        <p class="text-[10px] text-gray-500 italic">Note: Specific requirements may vary by team and seniority level.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Hiring Process -->
+    <section id="hiring" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-16 text-center">The Hiring <span class="text-[#00bceb]">Process</span></h2>
+            <div class="relative border-l-2 border-white/10 ml-4 space-y-12">
+                <!-- Step 1 -->
+                <div class="relative pl-10">
+                    <div class="timeline-dot"></div>
+                    <h4 class="font-bold text-lg mb-1">Step 1: Application</h4>
+                    <p class="text-gray-400 text-sm">Submit your profile for our open SW Engineering positions.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative pl-10 recruiter-joke group">
+                    <div class="timeline-dot group-hover:bg-white transition-colors"></div>
+                    <h4 class="font-bold text-lg mb-1 text-[#00bceb]">Step 2: Phone Screening</h4>
+                    <p class="text-gray-400 text-sm flex items-center gap-2">
+                        30-minute deep-dive with me 
+                        <span class="italic font-medium text-white">(your Reeeeeally Technical Recruiter)</span>
+                        <span class="joke-icon inline-block text-lg transform transition-transform">😉</span>
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative pl-10">
+                    <div class="timeline-dot"></div>
+                    <h4 class="font-bold text-lg mb-1">Step 3: Technical Interview I</h4>
+                    <p class="text-gray-400 text-sm">2-hour session focused on coding, algorithms, and data structures.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative pl-10">
+                    <div class="timeline-dot"></div>
+                    <h4 class="font-bold text-lg mb-1">Step 4: Technical Interview II</h4>
+                    <p class="text-gray-400 text-sm">2-hour technical deep-dive with our Team Leaders.</p>
+                </div>
+                <!-- Step 5 -->
+                <div class="relative pl-10">
+                    <div class="timeline-dot bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
+                    <h4 class="font-bold text-lg mb-1 text-green-500">Step 5: Offer</h4>
+                    <p class="text-gray-400 text-sm">Join the team redefining the future of silicon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="apply" class="py-20 border-t border-white/10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">Ready to <span class="text-[#00bceb]">Break the Mould?</span></h2>
+            <a href="https://careers.cisco.com/global/en/job/CISCISGLOBAL2003073EXTERNALENGLOBAL/C-Software-Engineer?utm_source=Alex-Site" target="_blank" class="inline-block bg-[#00bceb] hover:bg-[#017cad] text-white px-10 py-4 rounded-full font-bold text-lg transition shadow-xl">
+                Start Your Application
+            </a>
+
+            <div class="mt-20 text-gray-500 text-xs space-y-2">
+                <p>© 2026 This landing page is a personal project and candidate initiative by your recruiter.</p>
+                <p>Cisco and Cisco Silicon One are trademarks of Cisco Systems, Inc. Information sourced from official public releases.</p>
+                <p class="italic">Powered by Gemini ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GEMINI API INTEGRATION SCRIPT -->
+    <script>
+        const apiKey = ""; 
+        
+        async function callGemini(prompt, systemPrompt = "") {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            const payload = {
+                contents: [{ parts: [{ text: prompt }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] }
+            };
+
+            for (let i = 0; i < 5; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) throw new Error('API Error');
+                    const data = await response.json();
+                    return data.candidates?.[0]?.content?.parts?.[0]?.text || "No response generated.";
+                } catch (e) {
+                    const delay = Math.pow(2, i) * 1000;
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                }
+            }
+            return "Connection error. Please try again later.";
+        }
+
+        // Feature 1: Career Path Finder
+        document.getElementById('ai-path-btn').addEventListener('click', async () => {
+            const input = document.getElementById('ai-path-input').value;
+            const resultDiv = document.getElementById('ai-path-result');
+            if (!input) return;
+
+            resultDiv.classList.remove('hidden');
+            resultDiv.innerHTML = '<span class="ai-loading">✨ Gemini is matching your profile...</span>';
+
+            const system = "You are a Silicon One Recruitment Assistant. Based on the user's skills, suggest which team (Low-level drivers, ACL, API/SAI, Compiler, Serialization, or Hardware/ASIC) fits them best for their interview path. Keep it under 100 words.";
+            const res = await callGemini(`Candidate profile: ${input}`, system);
+            resultDiv.innerText = res;
+        });
+
+        // Feature 2: Architecture ELI5
+        document.getElementById('ai-eli5-btn').addEventListener('click', async () => {
+            const input = document.getElementById('ai-eli5-input').value;
+            const resultDiv = document.getElementById('ai-eli5-result');
+            if (!input) return;
+
+            resultDiv.classList.remove('hidden');
+            resultDiv.innerHTML = '<span class="ai-loading">✨ Simplifying...</span>';
+
+            const system = "You are an expert engineer at Cisco Silicon One. Explain complex networking and hardware terms for a child or a non-expert. Focus on the core 'Why' and 'How'. Maximum 3 sentences.";
+            const res = await callGemini(input, system);
+            resultDiv.innerText = res;
+        });
+
+        // Feature 3: Technical Coach
+        document.getElementById('ai-coach-start').addEventListener('click', async () => {
+            const box = document.getElementById('ai-coach-box');
+            const chat = document.getElementById('ai-coach-chat');
+            box.classList.remove('hidden');
+            chat.innerHTML = '<div class="text-center text-gray-500 text-xs italic">✨ Gemini is generating a technical challenge...</div>';
+
+            const system = "You are a Senior Technical Interviewer for Cisco Silicon One. Ask one specific, challenging technical question about C++, networking, or hardware design relevant to Silicon One. Wait for the user to answer before critiquing and asking the next one.";
+            const firstQuestion = await callGemini("Start the interview with a tough technical question.", system);
+            chat.innerHTML = `<div class="bg-blue-500/10 p-4 rounded-xl text-sm border border-blue-500/20"><strong>✨ Gemini:</strong> ${firstQuestion}</div>`;
+        });
+
+        document.getElementById('ai-coach-send').addEventListener('click', async () => {
+            const inputField = document.getElementById('ai-coach-input');
+            const chat = document.getElementById('ai-coach-chat');
+            const val = inputField.value;
+            if (!val) return;
+
+            chat.innerHTML += `<div class="bg-white/5 p-4 rounded-xl text-sm ml-8 text-right"><strong>You:</strong> ${val}</div>`;
+            inputField.value = "";
+            
+            const loadingMsg = document.createElement('div');
+            loadingMsg.className = "text-xs italic text-gray-500 ai-loading";
+            loadingMsg.innerText = "✨ Thinking...";
+            chat.appendChild(loadingMsg);
+
+            const system = "Evaluate the user's answer for technical accuracy (Cisco Silicon One context). Be rigorous but professional. Then ask a follow-up question.";
+            const response = await callGemini(val, system);
+            
+            loadingMsg.remove();
+            chat.innerHTML += `<div class="bg-blue-500/10 p-4 rounded-xl text-sm border border-blue-500/20"><strong>✨ Gemini:</strong> ${response}</div>`;
+            chat.scrollTop = chat.scrollHeight;
+        });
+    </script>
+</body>
+</html>
