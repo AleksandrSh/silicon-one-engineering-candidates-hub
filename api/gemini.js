@@ -8,8 +8,11 @@ module.exports = async function handler(req, res) {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) return res.status(500).json({ error: "Server missing GEMINI_API_KEY" });
 
+    const model = "gemini-2.5-flash";
     const url =
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=" +
+      "https://generativelanguage.googleapis.com/v1beta/models/" +
+      model +
+      ":generateContent?key=" +
       encodeURIComponent(apiKey);
 
     const payload = {
